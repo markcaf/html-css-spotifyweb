@@ -47,10 +47,13 @@ footer{
     padding: 20px 40px 30px 10px;
 }
 
-.nav-menu{
+.nav-menu .function{
     padding: 2px 0 0 10px;
+}
+
+.nav-menu .active{
     border-left: 3px solid #a4f12c;
-    height: 28px;
+    padding: 2px 0 0 7px;
 }
 
 .function{
@@ -66,9 +69,46 @@ footer{
 
 .function .text{
     font-size: 14px;
+    font-weight: 600;
 }
 
 .active{
     color: white;
     font-weight: 500;
+}
+
+.nav-playlist{
+    padding-left: 10px;
+}
+
+.nav-playlist .title{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 0 5px;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    color: #a3a3a3;
+}
+
+.nav-playlist ul li:first-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add {
+    font-weight: 600;
+}
+
+.playlist-name{
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-playlist ul{
+    list-style: none;
 }

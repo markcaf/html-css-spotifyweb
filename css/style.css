@@ -28,8 +28,9 @@ main{
 .main-nav{
     width: 200px;
     background-color: black;
-    padding: 20px;
     color: var(--grey-text);
+    /* display: flex;
+    flex-direction: column; */
 }
 
 #content{
@@ -42,9 +43,14 @@ footer{
     background-color: #282828;
 }
 
-.logo{
-    width: 120px;
-    margin-bottom: 30px;
+.nav-logo{
+    padding: 20px 40px 30px 10px;
+}
+
+.nav-menu{
+    padding: 2px 0 0 10px;
+    border-left: 3px solid #a4f12c;
+    height: 28px;
 }
 
 .function{
@@ -55,6 +61,14 @@ footer{
 }
 
 .function .icon img{
-    width: 30px;
+    width: 22px;
 } 
 
+.function .text{
+    font-size: 14px;
+}
+
+.active{
+    color: white;
+    font-weight: 500;
+}

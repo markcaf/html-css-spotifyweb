@@ -10,32 +10,51 @@
 
 /* Variabili globali */
 :root {
-
+    --grey-text: #707070;
 }
 
 #wrapper{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 main{
     display: flex;
     justify-content: space-between;
+    height: calc(100vh - 90px);
 }
 
 .main-nav{
     width: 200px;
     background-color: black;
-    height: calc(100vh - 90px);
+    padding: 20px;
+    color: var(--grey-text);
 }
 
 #content{
     width: calc(100% - 200px);
     background-color: #141922;
-    height: calc(100vh - 90px);
 }
 
 footer{
     height: 90px;
     background-color: #282828;
 }
+
+.logo{
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.function{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.function .icon img{
+    width: 30px;
+} 
+

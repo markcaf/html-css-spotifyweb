@@ -29,8 +29,9 @@ main{
     width: 200px;
     background-color: black;
     color: var(--grey-text);
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #content{
@@ -112,3 +113,37 @@ footer{
 .nav-playlist ul{
     list-style: none;
 }
+
+.install-app{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.icon-user img{
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.separator{
+    margin: 10px 20px 10px 10px;
+    height: 1px;
+    background-color: var(--grey-text);
+}
+

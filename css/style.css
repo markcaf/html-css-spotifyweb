@@ -30,8 +30,9 @@ main{
     height: calc(100vh - 90px);
 }
 
+/* MAIN NAVIGATION LEFT */
 .main-nav{
-    width: 200px;
+    width: 250px;
     background-color: black;
     color: var(--grey-text);
     display: flex;
@@ -152,6 +153,10 @@ footer{
     background-color: var(--grey-text);
 }
 
+.username{
+    font-size: 16px;
+}
+
 .nav-top{
     height: 100%;
     overflow: auto;
@@ -241,3 +246,118 @@ footer{
         height: 30px;
     }
 }
+/* END MAIN NAVIGATION LEFT */
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.footer-sx{
+    width: 30%;
+}
+
+.footer-middle{
+    width: 40%;
+}
+
+.footer-dx{
+    width: 30%;
+}
+
+.current-playback{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--grey-text);
+    gap: 15px;
+}
+
+.footer-sx img{
+    width: 50px;
+}
+
+.track-name{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.track-album{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.current-playback .action-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.commands{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.fa-circle-play{
+    font-size: 30px;
+}
+
+.play-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.current-time, .end-time{
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.bar{
+    height: 4px;
+    background-color: var(--grey-text);
+    width: 80%;
+    position: relative;
+}
+
+.current-bar{
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 30%;
+}
+
+.additional-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.view-playlist, .other-display{
+    color: white;
+    font-size: 14px;
+}
+
+.fa-volume-high{
+    color: white;
+    font-size: 13px;
+}
+
+.footer-dx .additional-content .bar{
+    width: 30%;
+}
+
+

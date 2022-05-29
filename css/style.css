@@ -305,7 +305,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .fa-circle-play{
@@ -360,4 +360,23 @@ footer{
     width: 30%;
 }
 
+/* Responsive */
+@media all and (max-width: 800px){
+    .current-playback .action-icons{
+        flex-direction: column;
+        /* justify-content: flex-start;
+        align-items: center; */
+        margin-left: 0;
+        gap: 5px;
+    } 
+
+    .footer-middle{
+        width: 30%;
+    }
+
+    .bar{
+        width: 60%;
+    }
+
+}
 

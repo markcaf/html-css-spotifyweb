@@ -28,6 +28,7 @@ main{
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 90px);
+    overflow: hidden;
 }
 
 /* MAIN NAVIGATION LEFT */
@@ -379,4 +380,190 @@ footer{
     }
 
 }
+/* /FOOTER */
 
+/* CONTENT SECTION */
+/* Upgrade bar with button */
+#content .upgrade{
+    width: calc(100vw - 46px);
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+}
+
+#content .upgrade .button{
+    padding: 10px 25px;
+    color: white;
+    font-size: 12px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: absolute;
+    right: 235px;
+    top: 25px;
+}
+/* /Upgrade */
+
+/* Navigation Menu */
+#content .container_menu{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10px;
+    color: #707070;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.container_menu div:first-child{
+    border-bottom: 1px solid #7db82a;
+    border-width: 30%;
+}
+/* /navigation-menu */
+
+/* Main Content */
+/* Contenuti */
+
+main .container-music .recently-played{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+main .container-music .recently-played h1{
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+main .container-music .recently-played .box{
+    width: calc(95% / 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.container-music .recently-played .box img{
+    width: 100%;
+}
+
+.container-music .recently-played .box h3{
+    color: #ebe8e8;
+    font-size: 12px;
+    text-align: center;
+}
+
+.container-music .recently-played .text{
+    color: #707070;
+    font-size: 10px;
+}
+
+/* Hover recently played */
+.container-music .recently-played .box .img_hover{
+    position: relative;
+}
+
+.container-music .recently-played .box .img_hover .play_this{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    display: none;
+}
+
+.container-music .recently-played .box .img_hover:hover .play_this{
+    display: inline-block;
+}
+/* end hover */
+
+/* Created for user */
+main .container-music .created-for-user h1{
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+}
+
+main .container-music .created-for-user{
+    padding: 20px;
+}
+
+main .container-music .created-for-user .flex-created {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main .container-music .created-for-user .flex-created .box {
+    width: calc(95% / 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.container-music .created-for-user .flex-created .box img {
+    width: 100%;
+} 
+
+.container-music .created-for-user .flex-created .box h3 {
+    color: #ebe8e8;
+    font-size: 12px;
+    text-align: center;
+}
+
+.created-for-user .text{
+    width: 100%;
+    color: var(--grey-text);
+    margin-bottom: 15px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.container-music .created-for-user .flex-created .box .circle{
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* SCROLL CONTENT */
+#content{
+    overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+/* Track */
+  ::-webkit-scrollbar-track {
+    background: #282828;
+  }
+  
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #707070;
+}
+  
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #282828;
+}
+/* /SCROLL CONTENT */
+
+/* /main content */

@@ -394,7 +394,7 @@ footer{
 
 #content .upgrade .button{
     padding: 10px 25px;
-    color: white;
+    color: rgba(255, 255, 255, 0.811);
     font-size: 12px;
     border: 2px solid white;
     border-radius: 50px;
@@ -565,5 +565,87 @@ main .container-music .created-for-user .flex-created .box {
     background: #282828;
 }
 /* /SCROLL CONTENT */
+
+/* Responsive tablet e mobile */
+
+@media all and (min-width: 701px) and (max-width:1099px){
+    main .container-music .recently-played .box {
+        width: calc(90% / 4);
+    }
+}
+
+@media all and (max-width:700px){
+    #content .container-music .recently-played .box {
+        width: calc(95% / 2);
+    }
+
+    main .container-music .created-for-user .flex-created .box {
+        width: calc(95% / 2);
+    }
+}
+
+@media all and (max-width:600px){
+    #content .upgrade {
+        width: calc(100vw - 1px);
+        right: -200px;
+    }
+}
+
+/* GESTIONE HOVER */
+
+.menu span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.add:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.playlist-name:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.function:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.install-app .text:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+#content .upgrade .button:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+main .container_menu div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.favourite:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.folder:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.commands:hover{
+    cursor: pointer;
+}
+
+.bar .current-bar:hover{
+    background-color: #7db82a;
+    cursor: pointer;
+}
+/* Fine Hover */
 
 /* /main content */
